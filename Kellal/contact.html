@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop - Contact Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <h1>Watch Store</h1>
+    <nav>
+        <ul>
+            <li><a href="signup.html">signup</a></li>
+            <li><a href="login sign up.html">login</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="buy.html">buy</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="contact" class="form-container">
+        <h2>Contact Us</h2>
+        <form class="form" id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" placeholder="Enter your email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" placeholder="Enter your message" name="contact-message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Watch Shop. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        var name = document.getElementById("contact-name").value;
+        var email = document.getElementById("contact-email").value;
+        var message = document.getElementById("contact-message").value;
+
+      
+        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        
+        console.log("Name: " + name);
+        console.log("Email: " + email);
+        console.log("Message: " + message);
+
+       
+    });
+</script>
+
+</body>
+</html>

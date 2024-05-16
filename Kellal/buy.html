@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buy.css">
+    <title>Watch Store - Buy</title>
+</head>
+<body>
+    <div class="main-content">
+
+        <header>
+            <h3>Watch Store</h3>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+    
+        <div class="title-imag">
+            <h2>Shopping</h2>
+            <p>You will find your watch here and choose it</p>
+            <button id="choose-now-button">Choose Now</button>
+        </div>
+    
+    </div>
+
+    <div class="brand-name">G-Shock</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="G-shock Shop 1.png" alt="">
+            <h5>G-Shock wintery camouflage</h5>
+            <p>3000dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="G-shock 2.png" alt="">
+            <h5>Casio G-Shock g-1000</h5>
+            <p>3500dh</p>
+        </div>
+
+    </div> 
+
+
+    <div class="brand-name">Seiko</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="seiko 1.png" alt="">
+            <h5>Seiko prospex srpc 93k1</h5>
+            <p>4000dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="seiko 2.png" alt="">
+            <h5>Seiko classique acier bicolore</h5>
+            <p>3500dh</p>
+        </div>
+
+    </div> 
+
+
+    <div class="brand-name">Casio</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="casio 1.png" alt="">
+            <h5>montre casio homme mtp-1375d-7avdf</h5>
+            <p>4000dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="casio 2.png" alt="">
+            <h5>CASIO INDIA MTP-1375D-2A1V </h5>
+            <p>5000dh</p>
+        </div>
+
+    </div> 
+
+
+    <div class="brand-name">Patek Philippe</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="patek 1.png" alt="">
+            <h5>PATEK PHILIPPE AQUANAUT</h5>
+            <p>2500dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="patek 2.png" alt="">
+            <h5>Patek Philippe Nautilus (5712/1A-001)</h5>
+            <p>3500dh</p>
+        </div>
+
+    </div>
+
+
+    <div class="brand-name">Citizen</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="citizen 1.png" alt="">
+            <h5>CITIZEN WATCH COMPANY Citizen Eco-Drive Corso Two Tone</h5>
+            <p>4000dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="citizen 2.png" alt="">
+            <h5>CITIZEN Reloj Citizen Hombre AW0100-86A</h5>
+            <p>4000dh</p>
+        </div>
+
+    </div>
+
+
+    <div class="brand-name">Orient</div> 
+    <div class="brands-container">
+
+        <div class="card-watch">
+            <img src="c:/Users/hp/Downloads/ORIENT BG1.png" alt="">
+            <h5>ORIENT SEMI-SKELETON MEN AUTOMATIC</h5>
+            <p>3000dh</p>
+        </div>
+
+        <div class="card-watch">
+            <img src="c:/Users/hp/Downloads/images-removebg-preview.png" alt="">
+            <h5>ORIENT: Mechanical Sports Watch, Metal Strap</h5>
+            <p>3200dh</p>
+        </div>
+
+    </div>
+
+<script>
+ 
+    document.getElementById("choose-now-button").addEventListener("click", function() {
+    
+        window.scrollTo({ top: document.querySelector(".brands-container").offsetTop, behavior: 'smooth' });
+    });
+
+    const watchCards = document.querySelectorAll('.card-watch');
+    watchCards.forEach(card => {
+        card.addEventListener('mouseover', function() {
+            this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            this.style.transform = 'scale(1.05)';
+        });
+        card.addEventListener('mouseout', function() {
+            this.style.boxShadow = '';
+            this.style.transform = '';
+        });
+    });
+
+    watchCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const watchName = this.querySelector('h5').innerText;
+            const watchPrice = this.querySelector('p').innerText;
+            alert(`Watch: ${watchName}\nPrice: ${watchPrice}`);
+        });
+    });
+</script>
+
+</body>
+</html>

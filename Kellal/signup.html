@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop - Sign Up</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+    
+          
+            var username = document.getElementById("signup-username").value;
+            var email = document.getElementById("signup-email").value;
+            var password = document.getElementById("signup-password").value;
+            var confirmPassword = document.getElementById("signup-confirm-password").value;
+    
+           
+            if (username.trim() === "" || email.trim() === "" || password.trim() === "" || confirmPassword.trim() === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+    
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+    
+           
+            console.log("Username: " + username);
+            console.log("Email: " + email);
+            console.log("Password: " + password);
+    
+           
+        });
+    </script>
+    
+</head>
+<body>
+
+<main>
+    <div id="signup" class="form-container">
+        <form class="form">
+            <h2>Sign Up</h2>
+            <label for="signup-username">Username:</label>
+            <input type="text" placeholder="Enter Username" id="signup-username" name="signup-username" required>
+            <label for="signup-email">Email:</label>
+            <input type="email" placeholder="Enter email" id="signup-email" name="signup-email" required>
+            <label for="signup-password">Password:</label>
+            <input type="password"  placeholder="Enter password" id="signup-password" name="signup-password" required>
+            <label for="login-password">Confirm Password:</label> 
+            <input type="password"  placeholder="Enter pass confirmation" id="login-password" name="login-password" required>
+            <button type="submit">Sign Up</button>
+            
+            <p>Already have an account? <a href="login sign up.html " id="login-link-in-signup">Login</a></p>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop - Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css.login.css">
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+            
+            var email = document.getElementById("login-email").value;
+            var password = document.getElementById("login-password").value;
+            
+          
+            if (email.trim() === "" || password.trim() === "") {
+                alert("Please enter both email and password.");
+                return;
+            }
+            
+           
+            console.log("Email: " + email);
+            console.log("Password: " + password);
+            
+           
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Watche Store</h1>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div id="login" class="form-container">
+            <form class="form">
+                <h2>Login</h2>
+                <label for="login-email">Email:</label>
+                <input type="email"  placeholder="Enter email" id="login-email" name="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" placeholder="Enter password" id="login-password" name="login-password" required>
+                
+
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="signup.html" id="signup-link-in-login">Sign Up</a></p>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

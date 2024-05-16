@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: black ;
+    padding: 10px 40px;
+    background-color: #000000;
+   
+}
+
+header h1 {
+    text-decoration: none;
+    color: rgb(218, 208, 208);
+    margin-left: 15px;
+    font-size: 25px;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+    
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e7dfdf;
+    text-decoration: none;
+   font-size: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

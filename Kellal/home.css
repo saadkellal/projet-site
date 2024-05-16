@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+
+}
+.main-content{
+    background-image: url(new_header_spence_12.webp);
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+   
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 25px;
+
+}
+header a:hover{
+    color: #2C92E1;
+    transition: color 1s;
+}
+
+header h3{
+    color: aliceblue;
+    font-size: 30px;
+}
+.title-imag{
+    margin-top: 250px;
+    text-align: center;
+}
+.title-imag h2{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    
+}
+.title-imag p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.title-imag button{
+    background-color: #D3AD29;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    border: black solid 2px;
+    font-size: 25px;
+
+}
+.brands-watches1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 60px;
+    
+}
+.brands-watches1 div{
+    position: relative;
+    width: 450px;
+    height: 125px;
+    margin-left: 10px;
+}
+.brands-watches1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+.brands-watches2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 60px;
+}
+.brands-watches2 div{
+    position: relative;
+    width: 450px;
+    height: 125px;
+    margin-left: 10px;
+}
+.brands-watches2 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+.brand1{
+    background-image: url(G1.avif);
+    background-size: cover;
+}
+.brand2{
+    background-image: url(seiko.jpg);
+    background-size: cover;
+}
+.brand3{
+    background-image: url(casio.jpg);
+    background-size: cover;
+}
+.brand4{
+    background-image: url(patrick.webp);
+    background-size: cover;
+}
+.brand5{
+    background-image: url(citizen.jpg);
+    background-size: cover;
+}
+.brand6{
+    background-image: url(Orient_Star_Classic_614x390_.jpg);
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 35px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer div h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.category a{
+    display: block;
+    margin-bottom: 10px;
+}
+.contact p{
+    display: block;
+    margin-bottom: 10px;
+}
+.follow i{
+    font-size: 25px;
+}

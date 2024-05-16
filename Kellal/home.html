@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="main-content">
+
+    <header>
+        <h3>Watch Store</h3>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="buy.html">Buy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="title-imag">
+        <h2>Welcome</h2>
+        <p>Shop all your favourite watches</p>
+        <button id="buy-now-button">Buy Now</button>
+    </div>
+
+</div>
+
+<div class="title">Our Brands</div>
+
+<div class="brands-watches1">
+
+    <div class="brand1">
+       <p>G-Shock</p>
+    </div>
+
+    <div class="brand2">
+        <p>Seiko</p>
+    </div>
+
+    <div class="brand3">
+        <p>Casio</p>
+     </div>
+     
+</div>
+
+<div class="brands-watches2">
+    <div class="brand4">
+        <p>Patek Philippe</p>
+    </div>
+
+    <div class="brand5">
+        <p>Citizen</p>
+    </div>
+
+    <div class="brand6">
+        <p>Orient</p>
+    </div>
+</div>
+
+<footer>
+
+<div class="category">
+    <h2>Category</h2>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+</div>
+<div class="contact">
+    <h2>Contact</h2>
+    <p>Num Phone:06XXXXXXXX</p>
+    <P>Num fixe:05XXXXXXXX</P>
+    <p>E-Mail:WatchesStore@gmail.com</p>
+</div>
+<div class="follow">
+    <h2>Follow</h2>
+    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+</div>
+
+</footer>
+
+<script>
+    
+    document.getElementById("buy-now-button").addEventListener("click", function() {
+        window.location.href = "buy.html";
+    });
+
+   
+    const followLinks = document.querySelectorAll('.follow a');
+    followLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            if (!confirm('You are about to leave the site. Do you want to proceed?')) {
+                event.preventDefault();
+            }
+        });
+    });
+
+    const brands = document.querySelectorAll('.brand1, .brand2, .brand3, .brand4, .brand5, .brand6');
+    brands.forEach(brand => {
+        brand.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#f0f0f0';
+        });
+        brand.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '';
+        });
+    });
+</script>
+
+</body>
+</html>
